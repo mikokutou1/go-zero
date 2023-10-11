@@ -12,13 +12,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/mikokutou1/go-zero-m/core/conf"
+	"github.com/mikokutou1/go-zero-m/core/logx/logtest"
+	"github.com/mikokutou1/go-zero-m/rest/chain"
+	"github.com/mikokutou1/go-zero-m/rest/httpx"
+	"github.com/mikokutou1/go-zero-m/rest/internal/cors"
+	"github.com/mikokutou1/go-zero-m/rest/router"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/conf"
-	"github.com/zeromicro/go-zero/core/logx/logtest"
-	"github.com/zeromicro/go-zero/rest/chain"
-	"github.com/zeromicro/go-zero/rest/httpx"
-	"github.com/zeromicro/go-zero/rest/internal/cors"
-	"github.com/zeromicro/go-zero/rest/router"
 )
 
 func TestNewServer(t *testing.T) {

@@ -5,11 +5,11 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/console"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/ctx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/pathx"
 	"github.com/spf13/cobra"
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/tools/goctl/util/console"
-	"github.com/zeromicro/go-zero/tools/goctl/util/ctx"
-	"github.com/zeromicro/go-zero/tools/goctl/util/pathx"
 )
 
 const baseDir = "greet"

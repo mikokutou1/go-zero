@@ -2,10 +2,8 @@ syntax = "proto3";
 
 package stream;
 
-option go_package = "github.com/zeromicro/go-zero";
+option go_package = "github.com/mikokutou1/go-zero-m";
 
 message placeholder {}
 
-service greet {
-  rpc hello (placeholder) returns (placeholder);
-}
+service greet { rpc hello(placeholder) returns (placeholder); }

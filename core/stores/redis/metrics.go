@@ -1,6 +1,6 @@
 package redis
 
-import "github.com/zeromicro/go-zero/core/metric"
+import "github.com/mikokutou1/go-zero-m/core/metric"
 
 const namespace = "redis_client"
 

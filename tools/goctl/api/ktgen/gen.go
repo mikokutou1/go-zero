@@ -8,7 +8,7 @@ import (
 	"text/template"
 
 	"github.com/iancoleman/strcase"
-	"github.com/zeromicro/go-zero/tools/goctl/api/spec"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/api/spec"
 )
 
 var (

@@ -42,7 +42,7 @@ Since different stages of data processing are performed by different goroutines,
 
 How can I terminate the process at any time?
 
-It's simple, just receive from a  channel or the given context in the goroutine.
+It's simple, just receive from a channel or the given context in the goroutine.
 
 ## A simple example
 
@@ -55,7 +55,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/zeromicro/go-zero/core/mr"
+    "github.com/mikokutou1/go-zero-m/core/mr"
 )
 
 func main() {
@@ -82,7 +82,7 @@ func main() {
 }
 ```
 
-More examples: [https://github.com/zeromicro/zero-examples/tree/main/mapreduce](https://github.com/zeromicro/zero-examples/tree/main/mapreduce)
+More examples: [https://github.com/mikokutou1/zero-examples/tree/main/mapreduce](https://github.com/mikokutou1/zero-examples/tree/main/mapreduce)
 
 ## Give a Star! ⭐
 

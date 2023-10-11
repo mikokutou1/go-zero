@@ -17,16 +17,16 @@ import (
 
 	"github.com/DATA-DOG/go-sqlmock"
 	"github.com/alicebob/miniredis/v2"
+	"github.com/mikokutou1/go-zero-m/core/fx"
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/core/stat"
+	"github.com/mikokutou1/go-zero-m/core/stores/cache"
+	"github.com/mikokutou1/go-zero-m/core/stores/redis"
+	"github.com/mikokutou1/go-zero-m/core/stores/redis/redistest"
+	"github.com/mikokutou1/go-zero-m/core/stores/sqlx"
+	"github.com/mikokutou1/go-zero-m/core/syncx"
+	"github.com/mikokutou1/go-zero-m/internal/dbtest"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/fx"
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/core/stat"
-	"github.com/zeromicro/go-zero/core/stores/cache"
-	"github.com/zeromicro/go-zero/core/stores/redis"
-	"github.com/zeromicro/go-zero/core/stores/redis/redistest"
-	"github.com/zeromicro/go-zero/core/stores/sqlx"
-	"github.com/zeromicro/go-zero/core/syncx"
-	"github.com/zeromicro/go-zero/internal/dbtest"
 )
 
 func init() {

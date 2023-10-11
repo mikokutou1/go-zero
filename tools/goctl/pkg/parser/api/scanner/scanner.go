@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/zeromicro/go-zero/tools/goctl/pkg/parser/api/token"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/pkg/parser/api/token"
 )
 
 const (

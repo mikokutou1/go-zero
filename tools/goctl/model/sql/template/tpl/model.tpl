@@ -1,12 +1,12 @@
 package {{.pkg}}
 {{if .withCache}}
 import (
-	"github.com/zeromicro/go-zero/core/stores/cache"
-	"github.com/zeromicro/go-zero/core/stores/sqlx"
+	"github.com/mikokutou1/go-zero-m/core/stores/cache"
+	"github.com/mikokutou1/go-zero-m/core/stores/sqlx"
 )
 {{else}}
 
-import "github.com/zeromicro/go-zero/core/stores/sqlx"
+import "github.com/mikokutou1/go-zero-m/core/stores/sqlx"
 {{end}}
 var _ {{.upperStartCamelObject}}Model = (*custom{{.upperStartCamelObject}}Model)(nil)
 

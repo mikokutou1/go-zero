@@ -25,7 +25,7 @@ type LogConf struct {
 
 - `ServiceName`: set the service name, optional. on `volume` mode, the name is used to generate the log files. Within `rest/zrpc` services, the name will be set to the name of `rest` or `zrpc` automatically.
 - `Mode`: the mode to output the logs, default is `console`.
-  -  `console` mode writes the logs to `stdout/stderr`.
+  - `console` mode writes the logs to `stdout/stderr`.
   - `file` mode writes the logs to the files specified by `Path`.
   - `volume` mode is used in docker, to write logs into mounted volumes.
 - `Encoding`: indicates how to encode the logs, default is `json`.
@@ -91,13 +91,13 @@ type Logger interface {
 ## Integrating with third-party logging libs
 
 - zap
-  - implementation: [https://github.com/zeromicro/zero-contrib/blob/main/logx/zapx/zap.go](https://github.com/zeromicro/zero-contrib/blob/main/logx/zapx/zap.go)
-  - usage example: [https://github.com/zeromicro/zero-examples/blob/main/logx/zaplog/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/zaplog/main.go)
+  - implementation: [https://github.com/mikokutou1/zero-contrib/blob/main/logx/zapx/zap.go](https://github.com/mikokutou1/zero-contrib/blob/main/logx/zapx/zap.go)
+  - usage example: [https://github.com/mikokutou1/zero-examples/blob/main/logx/zaplog/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/zaplog/main.go)
 - logrus
-  - implementation: [https://github.com/zeromicro/zero-contrib/blob/main/logx/logrusx/logrus.go](https://github.com/zeromicro/zero-contrib/blob/main/logx/logrusx/logrus.go)
-  - usage example: [https://github.com/zeromicro/zero-examples/blob/main/logx/logrus/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/logrus/main.go)
+  - implementation: [https://github.com/mikokutou1/zero-contrib/blob/main/logx/logrusx/logrus.go](https://github.com/mikokutou1/zero-contrib/blob/main/logx/logrusx/logrus.go)
+  - usage example: [https://github.com/mikokutou1/zero-examples/blob/main/logx/logrus/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/logrus/main.go)
 
-For more libs, please implement and PR to [https://github.com/zeromicro/zero-contrib](https://github.com/zeromicro/zero-contrib)
+For more libs, please implement and PR to [https://github.com/mikokutou1/zero-contrib](https://github.com/mikokutou1/zero-contrib)
 
 ## Write the logs to specific stores
 
@@ -134,12 +134,12 @@ func main() {
 
 	writer := logx.NewWriter(NewKafkaWriter(pusher))
 	logx.SetWriter(writer)
-  
+
 	// more code
 }
 ```
 
-Complete code: [https://github.com/zeromicro/zero-examples/blob/main/logx/tokafka/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/tokafka/main.go)
+Complete code: [https://github.com/mikokutou1/zero-examples/blob/main/logx/tokafka/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/tokafka/main.go)
 
 ## Filtering sensitive fields
 
@@ -189,16 +189,16 @@ func main() {
 		Password: "shouldNotAppear",
 		Message:  "bar",
 	})
-  
+
 	// more code
 }
 ```
 
-Complete code: [https://github.com/zeromicro/zero-examples/blob/main/logx/filterfields/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/filterfields/main.go)
+Complete code: [https://github.com/mikokutou1/zero-examples/blob/main/logx/filterfields/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/filterfields/main.go)
 
 ## More examples
 
-[https://github.com/zeromicro/zero-examples/tree/main/logx](https://github.com/zeromicro/zero-examples/tree/main/logx)
+[https://github.com/mikokutou1/zero-examples/tree/main/logx](https://github.com/mikokutou1/zero-examples/tree/main/logx)
 
 ## Give a Star! ⭐
 

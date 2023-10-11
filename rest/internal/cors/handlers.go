@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/zeromicro/go-zero/rest/internal/response"
+	"github.com/mikokutou1/go-zero-m/rest/internal/response"
 )
 
 const (

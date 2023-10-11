@@ -7,11 +7,11 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
+	"github.com/mikokutou1/go-zero-m/core/breaker"
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/core/trace/tracetest"
+	"github.com/mikokutou1/go-zero-m/internal/dbtest"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/breaker"
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/core/trace/tracetest"
-	"github.com/zeromicro/go-zero/internal/dbtest"
 )
 
 const mockedDatasource = "sqlmock"

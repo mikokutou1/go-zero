@@ -3,8 +3,8 @@ package redis
 import (
 	"testing"
 
+	"github.com/mikokutou1/go-zero-m/core/logx"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/logx"
 )
 
 func TestScriptCache(t *testing.T) {

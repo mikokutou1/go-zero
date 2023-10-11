@@ -1,4 +1,4 @@
-module github.com/zeromicro/go-zero/tools/goctl
+module github.com/mikokutou1/go-zero-m/tools/goctl
 
 go 1.18
 
@@ -13,9 +13,9 @@ require (
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.4
 	github.com/withfig/autocomplete-tools/integrations/cobra v1.2.1
-	github.com/zeromicro/antlr v0.0.1
-	github.com/zeromicro/ddl-parser v1.0.5
-	github.com/zeromicro/go-zero v1.5.6
+	github.com/mikokutou1/antlr v0.0.1
+	github.com/mikokutou1/ddl-parser v1.0.5
+	github.com/mikokutou1/go-zero-m v1.5.6
 	golang.org/x/text v0.13.0
 	google.golang.org/grpc v1.58.2
 	google.golang.org/protobuf v1.31.0

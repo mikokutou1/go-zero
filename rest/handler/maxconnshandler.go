@@ -3,9 +3,9 @@ package handler
 import (
 	"net/http"
 
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/core/syncx"
-	"github.com/zeromicro/go-zero/rest/internal"
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/core/syncx"
+	"github.com/mikokutou1/go-zero-m/rest/internal"
 )
 
 // MaxConnsHandler returns a middleware that limit the concurrent connections.

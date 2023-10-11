@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/ddl-parser/parser"
+	"github.com/mikokutou1/ddl-parser/parser"
 )
 
 func TestConvertDataType(t *testing.T) {

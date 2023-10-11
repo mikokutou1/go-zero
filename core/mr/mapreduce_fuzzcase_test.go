@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/mikokutou1/go-zero-m/core/threading"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/threading"
 	"gopkg.in/cheggaaa/pb.v1"
 )
 

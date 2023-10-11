@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/mikokutou1/go-zero-m/core/lang"
+	"github.com/mikokutou1/go-zero-m/core/mathx"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/lang"
-	"github.com/zeromicro/go-zero/core/mathx"
 	"google.golang.org/grpc/resolver"
 )
 

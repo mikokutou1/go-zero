@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/zeromicro/go-zero/core/logx"
+	"github.com/mikokutou1/go-zero-m/core/logx"
 	"google.golang.org/grpc/grpclog"
 )
 

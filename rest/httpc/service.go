@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/zeromicro/go-zero/core/breaker"
+	"github.com/mikokutou1/go-zero-m/core/breaker"
 )
 
 type (

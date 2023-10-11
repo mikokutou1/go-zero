@@ -38,7 +38,6 @@
 
 <img src="https://raw.githubusercontent.com/zeromicro/zero-doc/main/doc/images/mapreduce-cn.png" width="500">
 
-
 如何实现随时终止流程呢？
 
 `goroutine` 中监听一个全局的结束 `channel` 和调用方提供的 `ctx` 就行。
@@ -54,7 +53,7 @@ import (
     "fmt"
     "log"
 
-    "github.com/zeromicro/go-zero/core/mr"
+    "github.com/mikokutou1/go-zero-m/core/mr"
 )
 
 func main() {
@@ -81,7 +80,7 @@ func main() {
 }
 ```
 
-更多示例：[https://github.com/zeromicro/zero-examples/tree/main/mapreduce](https://github.com/zeromicro/zero-examples/tree/main/mapreduce)
+更多示例：[https://github.com/mikokutou1/zero-examples/tree/main/mapreduce](https://github.com/mikokutou1/zero-examples/tree/main/mapreduce)
 
 ## 欢迎 star！⭐
 

@@ -40,12 +40,11 @@ type LogConf struct {
 - `Compress`: 是否压缩日志文件，只在 `file` 模式下工作
 - `KeepDays`：日志文件被保留多少天，在给定的天数之后，过期的文件将被自动删除。对 `console` 模式没有影响
 - `StackCooldownMillis`：多少毫秒后再次写入堆栈跟踪。用来避免堆栈跟踪日志过多
-- `MaxBackups`: 多少个日志文件备份将被保存。0代表所有备份都被保存。当`Rotation`被设置为`size`时才会起作用。注意：`KeepDays`选项的优先级会比`MaxBackups`高，即使`MaxBackups`被设置为0，当达到`KeepDays`上限时备份文件同样会被删除。
-- `MaxSize`: 当前被写入的日志文件最大可占用多少空间。0代表没有上限。单位为`MB`。当`Rotation`被设置为`size`时才会起作用。
+- `MaxBackups`: 多少个日志文件备份将被保存。0 代表所有备份都被保存。当`Rotation`被设置为`size`时才会起作用。注意：`KeepDays`选项的优先级会比`MaxBackups`高，即使`MaxBackups`被设置为 0，当达到`KeepDays`上限时备份文件同样会被删除。
+- `MaxSize`: 当前被写入的日志文件最大可占用多少空间。0 代表没有上限。单位为`MB`。当`Rotation`被设置为`size`时才会起作用。
 - `Rotation`: 日志轮转策略类型。默认为`daily`（按天轮转）。
   - `daily` 按天轮转。
   - `size` 按日志大小轮转。
-
 
 ## 打印日志方法
 
@@ -92,13 +91,13 @@ type Logger interface {
 ## 与第三方日志库集成
 
 - zap
-  - 实现：[https://github.com/zeromicro/zero-contrib/blob/main/logx/zapx/zap.go](https://github.com/zeromicro/zero-contrib/blob/main/logx/zapx/zap.go)
-  - 使用示例：[https://github.com/zeromicro/zero-examples/blob/main/logx/zaplog/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/zaplog/main.go)
+  - 实现：[https://github.com/mikokutou1/zero-contrib/blob/main/logx/zapx/zap.go](https://github.com/mikokutou1/zero-contrib/blob/main/logx/zapx/zap.go)
+  - 使用示例：[https://github.com/mikokutou1/zero-examples/blob/main/logx/zaplog/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/zaplog/main.go)
 - logrus
-  - 实现：[https://github.com/zeromicro/zero-contrib/blob/main/logx/logrusx/logrus.go](https://github.com/zeromicro/zero-contrib/blob/main/logx/logrusx/logrus.go)
-  - 使用示例：[https://github.com/zeromicro/zero-examples/blob/main/logx/logrus/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/logrus/main.go)
+  - 实现：[https://github.com/mikokutou1/zero-contrib/blob/main/logx/logrusx/logrus.go](https://github.com/mikokutou1/zero-contrib/blob/main/logx/logrusx/logrus.go)
+  - 使用示例：[https://github.com/mikokutou1/zero-examples/blob/main/logx/logrus/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/logrus/main.go)
 
-对于其它的日志库，请参考上面示例实现，并欢迎提交 `PR` 到 [https://github.com/zeromicro/zero-contrib](https://github.com/zeromicro/zero-contrib)
+对于其它的日志库，请参考上面示例实现，并欢迎提交 `PR` 到 [https://github.com/mikokutou1/zero-contrib](https://github.com/mikokutou1/zero-contrib)
 
 ## 将日志写到指定的存储
 
@@ -107,7 +106,7 @@ type Logger interface {
 - `logx.NewWriter(w io.Writer)`
 - `logx.SetWriter(write logx.Writer)`
 
-例如，如果我们想把日志写进kafka，而不是控制台或文件，我们可以像下面这样做。
+例如，如果我们想把日志写进 kafka，而不是控制台或文件，我们可以像下面这样做。
 
 ```go
 type KafkaWriter struct {
@@ -135,16 +134,16 @@ func main() {
 
 	writer := logx.NewWriter(NewKafkaWriter(pusher))
 	logx.SetWriter(writer)
-  
+
 	// more code
 }
 ```
 
-完整代码：[https://github.com/zeromicro/zero-examples/blob/main/logx/tokafka/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/tokafka/main.go)
+完整代码：[https://github.com/mikokutou1/zero-examples/blob/main/logx/tokafka/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/tokafka/main.go)
 
 ## 过滤敏感字段
 
-如果我们需要防止  `password` 字段被记录下来，我们可以像下面这样实现。
+如果我们需要防止 `password` 字段被记录下来，我们可以像下面这样实现。
 
 ```go
 type (
@@ -190,16 +189,16 @@ func main() {
 		Password: "shouldNotAppear",
 		Message:  "bar",
 	})
-  
+
 	// more code
 }
 ```
 
-完整代码：[https://github.com/zeromicro/zero-examples/blob/main/logx/filterfields/main.go](https://github.com/zeromicro/zero-examples/blob/main/logx/filterfields/main.go)
+完整代码：[https://github.com/mikokutou1/zero-examples/blob/main/logx/filterfields/main.go](https://github.com/mikokutou1/zero-examples/blob/main/logx/filterfields/main.go)
 
 ## 更多示例
 
-[https://github.com/zeromicro/zero-examples/tree/main/logx](https://github.com/zeromicro/zero-examples/tree/main/logx)
+[https://github.com/mikokutou1/zero-examples/tree/main/logx](https://github.com/mikokutou1/zero-examples/tree/main/logx)
 
 ## Give a Star! ⭐
 

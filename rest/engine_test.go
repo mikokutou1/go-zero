@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/mikokutou1/go-zero-m/core/conf"
+	"github.com/mikokutou1/go-zero-m/core/fs"
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/rest/router"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/conf"
-	"github.com/zeromicro/go-zero/core/fs"
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/rest/router"
 )
 
 const (

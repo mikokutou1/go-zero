@@ -1,15 +1,16 @@
 package generator
 
 import (
-	"github.com/zeromicro/go-zero/tools/goctl/util/format"
 	"path/filepath"
 	"strings"
 
-	conf "github.com/zeromicro/go-zero/tools/goctl/config"
-	"github.com/zeromicro/go-zero/tools/goctl/rpc/parser"
-	"github.com/zeromicro/go-zero/tools/goctl/util/ctx"
-	"github.com/zeromicro/go-zero/tools/goctl/util/pathx"
-	"github.com/zeromicro/go-zero/tools/goctl/util/stringx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/format"
+
+	conf "github.com/mikokutou1/go-zero-m/tools/goctl/config"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/rpc/parser"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/ctx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/pathx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/stringx"
 )
 
 const (

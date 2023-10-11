@@ -6,13 +6,13 @@ import (
 	"path"
 	"time"
 
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/rest/chain"
-	"github.com/zeromicro/go-zero/rest/handler"
-	"github.com/zeromicro/go-zero/rest/httpx"
-	"github.com/zeromicro/go-zero/rest/internal"
-	"github.com/zeromicro/go-zero/rest/internal/cors"
-	"github.com/zeromicro/go-zero/rest/router"
+	"github.com/mikokutou1/go-zero-m/core/logx"
+	"github.com/mikokutou1/go-zero-m/rest/chain"
+	"github.com/mikokutou1/go-zero-m/rest/handler"
+	"github.com/mikokutou1/go-zero-m/rest/httpx"
+	"github.com/mikokutou1/go-zero-m/rest/internal"
+	"github.com/mikokutou1/go-zero-m/rest/internal/cors"
+	"github.com/mikokutou1/go-zero-m/rest/router"
 )
 
 type (

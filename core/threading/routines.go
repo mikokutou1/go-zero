@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/zeromicro/go-zero/core/rescue"
+	"github.com/mikokutou1/go-zero-m/core/rescue"
 )
 
 // GoSafe runs the given fn using another goroutine, recovers if fn panics.

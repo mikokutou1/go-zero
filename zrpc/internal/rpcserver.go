@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/zeromicro/go-zero/core/proc"
-	"github.com/zeromicro/go-zero/core/stat"
-	"github.com/zeromicro/go-zero/internal/health"
-	"github.com/zeromicro/go-zero/zrpc/internal/serverinterceptors"
+	"github.com/mikokutou1/go-zero-m/core/proc"
+	"github.com/mikokutou1/go-zero-m/core/stat"
+	"github.com/mikokutou1/go-zero-m/internal/health"
+	"github.com/mikokutou1/go-zero-m/zrpc/internal/serverinterceptors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health/grpc_health_v1"
 )

@@ -9,8 +9,8 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/zeromicro/go-zero/core/codec"
-	"github.com/zeromicro/go-zero/core/logx"
+	"github.com/mikokutou1/go-zero-m/core/codec"
+	"github.com/mikokutou1/go-zero-m/core/logx"
 )
 
 const maxBytes = 1 << 20 // 1 MiB

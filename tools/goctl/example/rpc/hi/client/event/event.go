@@ -6,9 +6,9 @@ package client
 import (
 	"context"
 
-	"github.com/zeromicro/go-zero/tools/goctl/example/rpc/hi/pb/hi"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/example/rpc/hi/pb/hi"
 
-	"github.com/zeromicro/go-zero/zrpc"
+	"github.com/mikokutou1/go-zero-m/zrpc"
 	"google.golang.org/grpc"
 )
 

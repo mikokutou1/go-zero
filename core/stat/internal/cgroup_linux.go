@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zeromicro/go-zero/core/iox"
-	"github.com/zeromicro/go-zero/core/lang"
+	"github.com/mikokutou1/go-zero-m/core/iox"
+	"github.com/mikokutou1/go-zero-m/core/lang"
 	"golang.org/x/sys/unix"
 )
 

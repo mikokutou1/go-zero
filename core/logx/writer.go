@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 
 	fatihcolor "github.com/fatih/color"
-	"github.com/zeromicro/go-zero/core/color"
+	"github.com/mikokutou1/go-zero-m/core/color"
 )
 
 type (

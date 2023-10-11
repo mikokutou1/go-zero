@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zeromicro/go-zero/core/syncx"
+	"github.com/mikokutou1/go-zero-m/core/syncx"
 )
 
 // defaultHealthManager is global comboHealthManager.

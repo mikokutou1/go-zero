@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"net/textproto"
 
-	"github.com/zeromicro/go-zero/core/mapping"
+	"github.com/mikokutou1/go-zero-m/core/mapping"
 )
 
 const headerKey = "header"

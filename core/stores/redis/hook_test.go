@@ -11,10 +11,10 @@ import (
 	"time"
 
 	red "github.com/go-redis/redis/v8"
+	"github.com/mikokutou1/go-zero-m/core/breaker"
+	"github.com/mikokutou1/go-zero-m/core/logx/logtest"
+	ztrace "github.com/mikokutou1/go-zero-m/core/trace"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/breaker"
-	"github.com/zeromicro/go-zero/core/logx/logtest"
-	ztrace "github.com/zeromicro/go-zero/core/trace"
 	tracesdk "go.opentelemetry.io/otel/trace"
 )
 

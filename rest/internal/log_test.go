@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/mikokutou1/go-zero-m/core/logx/logtest"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/logx/logtest"
 )
 
 func TestInfo(t *testing.T) {

@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"testing"
 
+	ztrace "github.com/mikokutou1/go-zero-m/core/trace"
+	"github.com/mikokutou1/go-zero-m/core/trace/tracetest"
+	"github.com/mikokutou1/go-zero-m/rest/chain"
 	"github.com/stretchr/testify/assert"
-	ztrace "github.com/zeromicro/go-zero/core/trace"
-	"github.com/zeromicro/go-zero/core/trace/tracetest"
-	"github.com/zeromicro/go-zero/rest/chain"
 	"go.opentelemetry.io/otel"
 	tcodes "go.opentelemetry.io/otel/codes"
 	"go.opentelemetry.io/otel/propagation"

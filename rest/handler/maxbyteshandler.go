@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/zeromicro/go-zero/rest/internal"
+	"github.com/mikokutou1/go-zero-m/rest/internal"
 )
 
 // MaxBytesHandler returns a middleware that limit reading of http request body.

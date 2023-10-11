@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/zeromicro/go-zero/tools/goctl/pkg/parser/api/ast"
-	"github.com/zeromicro/go-zero/tools/goctl/pkg/parser/api/scanner"
-	"github.com/zeromicro/go-zero/tools/goctl/pkg/parser/api/token"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/pkg/parser/api/ast"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/pkg/parser/api/scanner"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/pkg/parser/api/token"
 )
 
 const idAPI = "api"

@@ -1,9 +1,9 @@
 package gen
 
 import (
-	"github.com/zeromicro/go-zero/tools/goctl/model/sql/template"
-	"github.com/zeromicro/go-zero/tools/goctl/util"
-	"github.com/zeromicro/go-zero/tools/goctl/util/pathx"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/model/sql/template"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util"
+	"github.com/mikokutou1/go-zero-m/tools/goctl/util/pathx"
 )
 
 func genTableName(table Table) (string, error) {

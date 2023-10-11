@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/mikokutou1/go-zero-m/rest/internal"
+	"github.com/mikokutou1/go-zero-m/rest/internal/response"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/rest/internal"
-	"github.com/zeromicro/go-zero/rest/internal/response"
 )
 
 func TestLogHandler(t *testing.T) {
